@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The IRL BYPA Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        strong {
+            color: #d9534f;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        blockquote {
+            border-left: 4px solid #d9534f;
+            padding-left: 10px;
+            color: #555;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>The IRL BYPA Guide</h1>
+    <p><strong>Note:</strong> Aimlock is extremely difficult to implement, so this guide will focus on using ESP (Extra Sensory Perception) instead.</p>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li><strong>MYST</strong>: The external tool created by my friend.</li>
+        <li><strong>Video Editing Software</strong>: Use Adobe Premiere Pro or any similar application that supports chroma keying.</li>
+    </ul>
+
+    <h3>Setup Instructions</h3>
+
+    <h4>Step 1: Obtain MYST</h4>
+    <ul>
+        <li>Download MYST and install it on your system.</li>
+        <li>For stealth purposes, rename it to a system file (e.g., <code>system32</code>) to avoid detection in Task Manager.</li>
+    </ul>
+
+    <h4>Step 2: Configure MYST</h4>
+    <ul>
+        <li>MYST can be loaded prior to launching Roblox.</li>
+        <li>Utilize the auto-configuration feature for automatic stream-proofing.</li>
+        <li>MYST is designed to hide from Task View and Taskbar. You can interact with MYST without changing your cursor appearance during recordings.</li>
+    </ul>
+
+    <h4>Step 3: Adjust Windows Defender</h4>
+    <p>To avoid detection by Windows Defender, you can disable it or add an exclusion. Here’s how to do it without showing up in Windows Antivirus:</p>
+    <ol>
+        <li><strong>Open Registry Editor</strong>:
+            <ul>
+                <li>Type <code>regedit</code> in the Windows search bar and hit Enter.</li>
+            </ul>
+        </li>
+        <li><strong>Navigate to the Following Directory</strong>:
+            <pre>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender</pre>
+        </li>
+        <li><strong>Add a New Key</strong>:
+            <ul>
+                <li>Right-click on the right pane and select <strong>New > String Value</strong>.</li>
+                <li>Name it <code>AddExclusion</code>.</li>
+                <li>Set the value to the directory path of your MYST mapper.</li>
+            </ul>
+            <blockquote>
+                <strong>Note:</strong> MYST is not classified as a virus, so it should be safe to add.
+            </blockquote>
+        </li>
+        <li><strong>Permissions</strong>:
+            <ul>
+                <li>If you encounter issues editing the registry due to permission problems, search for a YouTube video tutorial on how to gain the necessary permissions. This may take around 10 minutes.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Step 4: Start Your Recording</h4>
+    <ul>
+        <li>You’re now ready to record! MYST is configured, and Windows Defender is bypassed. Both Task Manager and Task View will not show any suspicious activity.</li>
+    </ul>
+
+    <h4>Step 5: Using ESP During Recording</h4>
+    <ul>
+        <li>Start your IRL recording and utilize your ESP tool as needed.</li>
+    </ul>
+
+    <h3>Post-Recording Process</h3>
+    <ol>
+        <li><strong>Open Premiere Pro</strong>.</li>
+        <li><strong>Get the Hex Color of Your ESP</strong>:
+            <ul>
+                <li>This information will be provided within MYST.</li>
+            </ul>
+        </li>
+        <li><strong>Remove the ESP Color</strong>:
+            <ul>
+                <li>Input the hex color into Premiere Pro’s chroma key settings to remove that color from your video.</li>
+                <li><strong>Important</strong>: Choose a hex color that is not present in your environment or the game (commonly used colors are green or purplish).</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>With these steps, you should be able to effectively use MYST and record your sessions without detection! Happy streaming!</p>
+</body>
+</html>
